@@ -1,4 +1,5 @@
 // Coding Challenge #1: Basketball Score
+
 function totalBasketballScore(freeThrows, midRange, threePoints) {
   const args = Array.from(arguments);
   const argsLen = args.length;
@@ -13,3 +14,30 @@ const sum = totalBasketballScore(2, 3, 4);
 console.log(`Total score is ${sum}`);
 
 // Coding Challenge #2: Computer Store
+
+function itemPrice(item) {
+  if (typeof item !== "string") {
+    console.log("you must have to input a string");
+    return -1;
+  }
+  switch (item) {
+    case "computer":
+      return 500;
+    case "mouse":
+      return 10;
+    case "tablet":
+      return 250;
+    case "case":
+      return 25;
+    case "router":
+      return 100;
+    default:
+      console.log("Sorry, youre desired item is not avilable");
+  }
+}
+const price = itemPrice("case");
+console.log("Your total is: ", price);
+
+// Coding Challenge #3: What’s for dinner?
+
+//Coding Challenge #4: Leap Year
